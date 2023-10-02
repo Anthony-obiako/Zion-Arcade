@@ -295,7 +295,7 @@ p[data-width="wide"] {
 input:where([type="text"], [type="email"]) {
   border-radius: 100vw;
   border: 0;
-  padding: var(--size-300) var(--size-400);
+  padding: var(--size-100) var(--size-200);
 }
 
 @media (min-width: 50em) {
@@ -386,6 +386,45 @@ input:where([type="text"], [type="email"]) {
   background-position: 15rem -5rem, 80rem -42rem;
   background-repeat: no-repeat;
   opacity: 0.1;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slider {
+  list-style: none;
+}
+
+.slider img {
+  max-width: var(--size-900);
+  aspect-ratio: 1;
+  border-radius: var(--size-400);
+}
+
+.game-box {
+  background-color: var(--clr-neutral-900);
+  margin-top: var(--size-100);
+  border-radius: var(--size-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 8px;
+}
+
+.game-link {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.game-link:hover {
+  color: var(--clr-accent-300);
 }
 
 /* utility class */
@@ -503,6 +542,16 @@ input:where([type="text"], [type="email"]) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+}
+
+@media (min-width: 50em) {
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-800);
+    max-width: 40em;
+    justify-content: center;
   }
 }
 
