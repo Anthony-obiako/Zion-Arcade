@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
     <title>Vite App</title>
   </head>
   <body>
@@ -28,18 +32,6 @@
             aria-controls="primary-navigation"
             aria-expanded="false"
           >
-            <img
-              class="menu-burger"
-              src="./icons/menu-burger_3917762.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <img
-              class="cross-small"
-              src="./icons/cross-small_4338828.svg"
-              alt=""
-              aria-hidden="true"
-            />
             <span class="visually-hidden">Menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
@@ -58,7 +50,7 @@
     <main>
       <section class="padding-block-900">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns hero">
             <div class="flow">
               <h1 class="fs-primary-heading fw-bold">
                 Take a head-dive into the Retro Multiverse
@@ -243,11 +235,12 @@
               <input type="email" />
               <button class="button" data-shadow="none">Go</button>
             </form>
-            <p>Copyright 2023. All rights Reserved</p>
           </div>
+          <p class="Copyright">Copyright 2023. All rights Reserved</p>
         </div>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
