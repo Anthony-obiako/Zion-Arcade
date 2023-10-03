@@ -306,7 +306,6 @@ p[data-width="wide"] {
 
 .copyright {
   grid-area: copyright;
-  grid-row-end: auto;
 }
 
 input:where([type="text"], [type="email"]) {
@@ -659,4 +658,9 @@ input:where([type="text"], [type="email"]) {
 .footer-links {
   display: flex;
   flex-direction: column;
+}
+
+.login {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
 }
